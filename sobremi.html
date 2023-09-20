@@ -11,19 +11,37 @@
     <meta name="author" content="Andres de Acevedo">
     <meta name="robots" content="index">
     <link rel="icon" href=""> <!--ELEGIR ÍCONO LUEGO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <nav>
-            <ul class="lista_horizontal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="consolas.html">Consolas</a></li>
-                <li><a href="juegosdestacados.html">Juegos Destacados</a></li>
-                <li><a href="sobremi.html">Sobre Mí</a></li>
-                <li><a href="opiniones.html">Opiniones</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consolas.html">Consolas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegosdestacados.html">Juegos Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opiniones.html">Opiniones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sobremi.html">Sobre Mí</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <h1>Sobre Mí</h1>
     </header>
@@ -31,56 +49,53 @@
     <main>
         <hr>
         <section>
-            <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo maxime enim exercitationem
-                    voluptatem. Aliquam veniam voluptate adipisci rem iste repellat provident exercitationem cum ab
-                    voluptatibus maiores expedita possimus aliquid ut nemo a ipsam, reprehenderit corrupti omnis!
-                    Recusandae
-                    reiciendis sapiente accusamus atque ratione obcaecati doloribus sit nisi architecto unde harum
-                    adipisci,
-                    officiis velit ipsa laudantium esse? Nulla expedita vitae, eos earum harum dolorum, deserunt quo
-                    deleniti odit fugit beatae. Atque officiis nostrum, a dolorum rerum quis repudiandae, doloribus
-                    corrupti
-                    possimus ipsa cumque consequatur molestiae nisi. Suscipit at soluta ipsam sint, inventore explicabo,
-                    ab
-                    quo ad illo distinctio excepturi, nam illum eius!</p>
-                <div>
-                    <h3> Xbox Series S</h3>
-                    <img src="" alt="Xbox Series S" title="Xbox Series S">
+            <article class="row">
+                <div class="col-6">
+                    <h3>Un Profesor y Jugador Apasionado</h3>
+                    <p>Como profesor de matemática en Secundaria, mi vida está inmersa en el mundo de los números y las
+                        fórmulas. Sin embargo, en mis momentos libres, encuentro un escape en el emocionante universo de
+                        los
+                        videojuegos. Poseo una Xbox Series S y una notebook MSI GF65 Thin con un procesador i5
+                        10500H y una gráfica Nvidia RTX 3060.
+                        <br><br>
+                        A través del servicio Game Pass, tengo acceso a una amplia biblioteca de juegos que abarca
+                        géneros y
+                        estilos diversos. Esta plataforma me permite explorar mundos virtuales y desafiar mi destreza en
+                        estrategias y habilidades. Esta pasión por los videojuegos se ha convertido en un valioso
+                        complemento en mi vida, ofreciendo un equilibrio entre el mundo académico y el entretenimiento
+                        interactivo.
+                    </p>
                 </div>
-                <div>
-                    <h3> PC (laptop)</h3>
-                    <img src="" alt="PC (laptop)" title="PC (laptop)">
+                <div class="col">
+                    <img src="img/sobremi/XboxSeriesS.jpg" alt="Xbox Series S" title="Xbox Series S">
+                </div>
+                <div class="col">
+                    <img src="img/sobremi/pc.jpg" alt="PC (laptop)" title="PC (laptop)">
                 </div>
             </article>
             <hr>
-            <article>
-                <div>
-                    <img src="" alt="Juego 1" title="Juego 1">
-                    <p>Nombre: xxx<br>
-                        Trailer: xxx
-                    </p>
+
+            <h3>Juegos Preferidos de Game Pass</h3>
+            <article class="row">
+                <div class="col">
+                    <img src="img/sobremi/pentiment.jpg" alt="Pentiment" title="Pentiment">
                 </div>
-                <div>
-                    <img src="" alt="Juego 2" title="Juego 2">
-                    <p>Nombre: xxx<br>
-                        Trailer: xxx
-                    </p>
+                <div class="col">
+                    <img src="img/sobremi/valheim.jpg" alt="Valheim" title="Valheim">
                 </div>
-                <div>
-                    <img src="" alt="Juego 3" title="Juego 3">
-                    <p>Nombre: xxx<br>
-                        Trailer: xxx
-                    </p>
+                <div class="col">
+                    <img src="img/sobremi/aplaguetale.jpg" alt="A Plague Tale: Requiem" title="A Plague Tale: Requiem">
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vitae laborum nemo voluptates neque
-                    rerum. Odit eius aperiam illum reiciendis natus quam qui nisi! Esse non cum laudantium aliquam amet
-                    explicabo natus nam vel. Obcaecati tenetur non harum mollitia, excepturi, at veniam similique,
-                    nostrum magni velit cupiditate earum iusto corrupti aut quasi ex soluta incidunt explicabo
-                    temporibus vero. Laborum, perspiciatis maxime? Quisquam corporis qui dolorem sunt nobis inventore
-                    pariatur necessitatibus modi at, in veniam hic quis dicta animi commodi deleniti tenetur fuga
-                    officiis minima consectetur, laudantium architecto ratione. Quaerat, aliquam. Ducimus asperiores
-                    sequi adipisci blanditiis amet debitis perspiciatis provident molestias!</p>
+                <div class="col-6">
+                <p>Pentiment me cautivó con su narrativa única y estilo visual cautivador. Cada pincelada en este juego
+                    independiente es una obra de arte que cuenta una historia profunda.
+                    <br><br>
+                    Valheim me transportó a un reino nórdico de mitos y leyendas. Construir, explorar y enfrentar a
+                    criaturas mitológicas se convirtió en una aventura inolvidable.
+                    <br><br>
+                    A Plague Tale: Requiem logró llevarme a una Francia medieval infestada de plagas y misterios. Su
+                    atmosfera envolvente y emocionante narrativa lo convirtieron en una experiencia épica.</p>
+                </div>
             </article>
 
         </section>

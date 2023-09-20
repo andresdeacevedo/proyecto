@@ -11,47 +11,84 @@
     <meta name="author" content="Andres de Acevedo">
     <meta name="robots" content="index">
     <link rel="icon" href=""> <!--ELEGIR ÍCONO LUEGO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <nav>
-            <ul class="lista_horizontal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="consolas.html">Consolas</a></li>
-                <li><a href="juegosdestacados.html">Juegos Destacados</a></li>
-                <li><a href="sobremi.html">Sobre Mí</a></li>
-                <li><a href="opiniones.html">Opiniones</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consolas.html">Consolas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegosdestacados.html">Juegos Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="opiniones.html">Opiniones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremi.html">Sobre Mí</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <h1>Comparte tu opinión</h1>
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class="row">
+            <div class="col">
                 <h3>Creciendo como comunidad</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum magni veniam tempore aspernatur
-                    facilis laboriosam doloribus dolor aperiam, officiis iure, fuga quod odio odit molestias accusamus
-                    consequuntur dolores at iusto tenetur ratione veritatis minima! Nulla dolore voluptatibus animi
-                    praesentium hic harum qui at inventore aliquam. Ex non ducimus temporibus unde!</p>
+                <p>En nuestra comunidad, la pasión por los videojuegos nos une. Queremos escuchar tus experiencias y
+                    descubrir los mundos que has explorado. ¿Tienes un videojuego favorito en tu Xbox? Comparte tu
+                    reseña con nosotros y forma parte de esta conversación.
+                    <br><br>
+                    Cada mes, seleccionaremos tres opiniones destacadas para compartir en nuestro sitio web. Esta es tu
+                    oportunidad de destacar y ser parte de nuestra creciente comunidad de jugadores. Juntos, podemos
+                    celebrar lo que hace especial a cada título y descubrir gemas ocultas que merecen ser conocidas.
+                    <br><br>
+                    ¡No dudes en contarnos sobre tus aventuras virtuales! Tu opinión puede influir en otros y enriquecer
+                    la experiencia de juego de la comunidad. ¡Esperamos leer tus reseñas!
+                </p>
             </div>
 
-            <div>
-                <form action="" method="post" enctype="text/plain">
-                    <!--Nota 1: no uso etiqueta label por desición de diseño-->
-                    <!--Nota 2: en action de momento no sé que poner-->
-                    <input type="text" placeholder="Nombre" name="nombre"> <br>
-                    <input type="text" placeholder="Dispositivo desde el que juegas"
-                        name="Dispositivo desde el que juegas"> <br>
-                    <input type="text" placeholder="Juego actual preferido" name="juego preferido"> <br>
-                    <textarea placeholder="Opinión del videojuego" name="opinión"></textarea> <br>
-
-                </form>
+            <div class="col d-flex justify-content-center">
+                <div class="w-75">
+                    <h3 class="text-center mb-4">Deja tus datos</h3>
+                    <form action="" method="post" enctype="text/plain">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Dispositivo desde el que juegas"
+                                name="Dispositivo desde el que juegas">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Juego actual preferido"
+                                name="juego preferido">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Opinión del videojuego"
+                                name="opinión"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
             </div>
 
-            <div>
+
+            <div class="col">
                 <h3>Seguime en redes sociales</h3>
                 <ul>
                     <li><a href="https:/instagram.com">Instagram</a></li>
@@ -63,59 +100,63 @@
 
         <section>
             <h3>Opiniones destacadas del mes</h3>
-            <article>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum doloremque temporibus, nam
-                        repudiandae quo, magni vero praesentium corrupti repellendus harum reiciendis atque? Esse beatae
-                        ea
-                        modi fugit saepe, ipsa aut veniam earum excepturi dignissimos accusantium blanditiis eligendi
-                        cupiditate recusandae alias hic libero illo voluptatum mollitia commodi. Repudiandae enim
-                        nesciunt
-                        facilis!</p>
+            <div class="row">
+                <div class="col">
+                    <article class="row">
+                        <div class="col">
+                            <p>"No puedo dejar de explorar el vasto universo de 'Outer Worlds' en Xbox Series. La
+                                narrativa
+                                intrigante y las decisiones impactantes hacen que cada partida sea única. Un RPG
+                                espacial
+                                que no
+                                puede faltar en tu colección."</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/opiniones/outer.jpg" alt="Outer Worlds" title="Outer Worlds">
+                            <p>Outer Worlds<br>
+                                <a href="">Link de compra</a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                <div>
-                    <img src="" alt="Juego 1" title="Juego 1">
-                    <p>Nombre: xxx<br>
-                        <a href="">Link de compra</a>
-                    </p>
-                </div>
-            </article>
 
-            <article>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum doloremque temporibus, nam
-                        repudiandae quo, magni vero praesentium corrupti repellendus harum reiciendis atque? Esse beatae
-                        ea
-                        modi fugit saepe, ipsa aut veniam earum excepturi dignissimos accusantium blanditiis eligendi
-                        cupiditate recusandae alias hic libero illo voluptatum mollitia commodi. Repudiandae enim
-                        nesciunt
-                        facilis!</p>
+                <div class="col">
+                    <article class="row">
+                        <div class="col">
+                            <p>"'FIFA 23' en Xbox Series redefine la experiencia futbolística. Los gráficos realistas y
+                                la
+                                jugabilidad fluida te sumergen en el campo. Cada partido es una emocionante batalla. Un
+                                golazo
+                                de juego deportivo en la nueva generación."</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/opiniones/fifa.jpg" alt="FIFA 23" title="FIFA 23">
+                            <p>FIFA 23<br>
+                                <a href="">Link de compra</a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                <div>
-                    <img src="" alt="Juego 2" title="Juego 2">
-                    <p>Nombre: xxx<br>
-                        <a href="">Link de compra</a>
-                    </p>
-                </div>
-            </article>
 
-            <article>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum doloremque temporibus, nam
-                        repudiandae quo, magni vero praesentium corrupti repellendus harum reiciendis atque? Esse beatae
-                        ea
-                        modi fugit saepe, ipsa aut veniam earum excepturi dignissimos accusantium blanditiis eligendi
-                        cupiditate recusandae alias hic libero illo voluptatum mollitia commodi. Repudiandae enim
-                        nesciunt
-                        facilis!</p>
+                <div class="col">
+                    <article class="row">
+                        <div class="col">
+                            <p>"'Age of Empires IV' en Xbox Series es una joya para los amantes de la estrategia. La
+                                profundidad
+                                histórica y la jugabilidad táctica son impresionantes. Me siento como un líder en mi
+                                propia
+                                era.
+                                ¡Una experiencia estratégica excepcional!"</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/opiniones/ageofempire.jpg" alt="Age of Empires IV" title="Age of Empires IV">
+                            <p>Age of Empires IV<br>
+                                <a href="">Link de compra</a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
-                <div>
-                    <img src="" alt="Juego 3" title="Juego 3">
-                    <p>Nombre: xxx<br>
-                        <a href="">Link de compra</a>
-                    </p>
-                </div>
-            </article>
+            </div>
         </section>
     </main>
 

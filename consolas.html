@@ -11,83 +11,113 @@
     <meta name="author" content="Andres de Acevedo">
     <meta name="robots" content="index">
     <link rel="icon" href=""> <!--ELEGIR ÍCONO LUEGO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <nav>
-            <ul class="lista_horizontal">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="consolas.html">Consolas</a></li>
-                <li><a href="juegosdestacados.html">Juegos Destacados</a></li>
-                <li><a href="sobremi.html">Sobre Mí</a></li>
-                <li><a href="opiniones.html">Opiniones</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="consolas.html">Consolas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="juegosdestacados.html">Juegos Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opiniones.html">Opiniones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremi.html">Sobre Mí</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <h1>Consolas</h1>
     </header>
 
 
-    <main id="main_consolas">
-        <section>
-            <article id="article_xbox">
-                <h2>XBOX</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, quod. Dicta quasi suscipit asperiores
-                    unde laudantium harum ut ab, modi eos dolore quod? Dolor provident optio quae consequatur sapiente
-                    error pariatur quasi necessitatibus voluptatum voluptate hic iure excepturi ex corrupti obcaecati,
-                    mollitia qui eveniet ipsam nulla asperiores tenetur eius commodi. Ex vel officia minima officiis
-                    laborum molestias laboriosam delectus impedit non perferendis doloribus obcaecati illo aspernatur
-                    nulla, itaque libero provident repudiandae atque nostrum in fugiat quod expedita sed. Perferendis
-                    odit enim laudantium omnis voluptatem laborum numquam fugiat ducimus quae repellat, vero, doloremque
-                    cumque minus odio nemo officiis doloribus amet quam?</p>
-                <img src="" alt="XBOX" title="XBOX"> <!--Imagen de la primer consola XBOX-->
+    <main>
+        <div class="row">
+            <article class="col">
+                <div class="row">
+                    <div class="col">
+                        <h2>Xbox: La Pionera en la Era del Juego en Línea</h2>
+                        <p>Lanzada en 2001, la Xbox original introdujo el mundo a una nueva era de juegos. Su potencia y
+                            capacidad de juego en línea marcaron un hito. Halo, entre otros, se convirtió en un ícono.
+                            Esta
+                            consola sentó las bases para el éxito de las futuras generaciones.</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/consolas/xbox.png" alt="XBOX" title="XBOX">
+                    </div>
+                </div>
             </article>
 
-            <article id="article_xbox360">
-                <h2>Xbox 360</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, quod. Dicta quasi suscipit asperiores
-                    unde laudantium harum ut ab, modi eos dolore quod? Dolor provident optio quae consequatur sapiente
-                    error pariatur quasi necessitatibus voluptatum voluptate hic iure excepturi ex corrupti obcaecati,
-                    mollitia qui eveniet ipsam nulla asperiores tenetur eius commodi. Ex vel officia minima officiis
-                    laborum molestias laboriosam delectus impedit non perferendis doloribus obcaecati illo aspernatur
-                    nulla, itaque libero provident repudiandae atque nostrum in fugiat quod expedita sed. Perferendis
-                    odit enim laudantium omnis voluptatem laborum numquam fugiat ducimus quae repellat, vero, doloremque
-                    cumque minus odio nemo officiis doloribus amet quam?</p>
-                <img src="" alt="Xbox 360" title="Xbox 360"> <!--Imagen de la Xbox 360-->
+            <article class="col">
+                <div class="row">
+                    <div class="col">
+                        <h2>Xbox 360: Un Salto Cuántico en la Experiencia de Juego</h2>
+                        <p>La Xbox 360, lanzada en 2005, llevó la jugabilidad a nuevas alturas. Gráficos asombrosos,
+                            servicios
+                            en línea robustos y un catálogo diverso de juegos la convirtieron en un éxito. Títulos como
+                            Gears of
+                            War y Mass Effect se convirtieron en referentes de la industria.</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/consolas/xbox360.png" alt="Xbox 360" title="Xbox 360">
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col">
+                <div class="row">
+                    <div class="col">
+                        <h2>Xbox One: Entretenimiento Total en un Solo Dispositivo</h2>
+                        <p>La Xbox One, de 2013, amplió los horizontes del entretenimiento. Más allá de los juegos,
+                            ofreció
+                            una
+                            experiencia completa de entretenimiento en el hogar. La retrocompatibilidad y el Game Pass
+                            añadieron
+                            valor, consolidando su legado.</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/consolas/xboxOne.png" alt="Xbox One y One X" title="Xbox One / One X">
+                    </div>
+                </div>
             </article>
 
-            <article id="article_xboxone">
-                <h2>Xbox One / One X</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, quod. Dicta quasi suscipit asperiores
-                    unde laudantium harum ut ab, modi eos dolore quod? Dolor provident optio quae consequatur sapiente
-                    error pariatur quasi necessitatibus voluptatum voluptate hic iure excepturi ex corrupti obcaecati,
-                    mollitia qui eveniet ipsam nulla asperiores tenetur eius commodi. Ex vel officia minima officiis
-                    laborum molestias laboriosam delectus impedit non perferendis doloribus obcaecati illo aspernatur
-                    nulla, itaque libero provident repudiandae atque nostrum in fugiat quod expedita sed. Perferendis
-                    odit enim laudantium omnis voluptatem laborum numquam fugiat ducimus quae repellat, vero, doloremque
-                    cumque minus odio nemo officiis doloribus amet quam?</p>
-                <img src="" alt="Xbox One y One X" title="Xbox One / One X"> <!--Imagen de la Xbox One/One X-->
+            <article class="col">
+                <div class="row">
+                    <div class="col">
+                        <h2>Xbox Series: El Futuro de los Videojuegos en Tus Manos</h2>
+                        <p>La Xbox Series, lanzada en 2020, representa la culminación de décadas de innovación. Potencia
+                            sin
+                            precedentes, tiempos de carga mínimos y una biblioteca expansiva definen esta generación.
+                            Con
+                            títulos como Halo Infinite, promete llevar la experiencia de juego a nuevos límites.</p>
+                    </div>
+                    <div class="col">
+                        <img src="img/consolas/xboxSeries.png" alt="Xbox Series S/X" title="Xbox Series S/X">
+                    </div>
+                </div>
             </article>
-
-            <article id="article_xboxseries">
-                <h2>Xbox Series S/X</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, quod. Dicta quasi suscipit asperiores
-                    unde laudantium harum ut ab, modi eos dolore quod? Dolor provident optio quae consequatur sapiente
-                    error pariatur quasi necessitatibus voluptatum voluptate hic iure excepturi ex corrupti obcaecati,
-                    mollitia qui eveniet ipsam nulla asperiores tenetur eius commodi. Ex vel officia minima officiis
-                    laborum molestias laboriosam delectus impedit non perferendis doloribus obcaecati illo aspernatur
-                    nulla, itaque libero provident repudiandae atque nostrum in fugiat quod expedita sed. Perferendis
-                    odit enim laudantium omnis voluptatem laborum numquam fugiat ducimus quae repellat, vero, doloremque
-                    cumque minus odio nemo officiis doloribus amet quam?</p>
-                <img src="" alt="Xbox Series S/X" title="Xbox Series S/X"> <!--Imagen de la Xbox Series S/X-->
-            </article>
-
-        </section>
+        </div>
     </main>
 
 
-    <footer id="footer_consolas">
+    <footer>
         <p>Sigueme en las redes para estar enterado de las últimas novedades en videojuegos de Xbox:</p>
         <a href="https:/instagram.com">Instagram</a>
         <a href="https:/facebook.com">Facebook</a>
