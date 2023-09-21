@@ -9,4 +9,38 @@ img {
     height: auto;
 }
 
- 
+body {
+    background-color: #1E1E1E; 
+    color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #107C10; 
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 20px;
+    margin-left: 0px;
+}
+.navbar {
+    background-color: #107C10 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF !important;
+}
+
+
+
+
+/*
+body {
+    background-color: rgba(0, 0, 0, 0.855);
+}
+
+h1, h2, h3, p {
+    color: rgb(12, 186, 12);
+}
+*/
