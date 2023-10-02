@@ -1,67 +1,66 @@
+@charset "UTF-8";
 /*Reset básico*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/*Variables*/
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-
 
 /*Color de fondo*/
 body {
-    background-color: #1E1E1E; 
-    color: #FFFFFF;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
 }
-
 
 /*Personalización de títulos*/
 h1, h2, h3, h4, h5, h6 {
-    color: #107C10; 
-    font-family: 'Roboto', sans-serif;
+  color: #107C10;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    font-size: 60px;
-    margin: 20px;
-    margin-left: 0px;
+  font-size: 60px;
+  margin: 20px;
+  margin-left: 0px;
 }
-
 
 /*NAV*/
 /*Colores del nav*/
-
 nav {
-    border-radius: 10px;
-    margin-top: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
+
 .navbar {
-    background-color: #107C10;
+  background-color: #107C10;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #FFFFFF ;
+  color: #FFFFFF;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-background-color: #FFFFFF;
-color: #107C10;
-border-radius: 10px;
+  background-color: #FFFFFF;
+  color: #107C10;
+  border-radius: 10px;
 }
 
 .navbar-light .navbar-nav .nav-link .active {
-    color: black;
+  color: black;
 }
 
 /*Menú de nav a la izq*/
 .navbar-nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 footer {
-    background-color: #107c103a;
-    border-radius: 10px;
-}
+  background-color: rgba(16, 124, 16, 0.2274509804);
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

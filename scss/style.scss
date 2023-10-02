@@ -1,0 +1,72 @@
+/*Reset básico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables*/
+$color-titulos: #107C10;
+$color-texto: #FFFFFF;
+$color-fondo: #1E1E1E;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*Color de fondo*/
+body {
+    background-color: $color-fondo; 
+    color: $color-texto;
+}
+
+
+/*Personalización de títulos*/
+h1, h2, h3, h4, h5, h6 {
+    color: $color-titulos; 
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+
+/*NAV*/
+/*Colores del nav*/
+
+nav {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.navbar {
+    background-color: #107C10;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF ;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+background-color: #FFFFFF;
+color: #107C10;
+border-radius: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link .active {
+    color: black;
+}
+
+/*Menú de nav a la izq*/
+.navbar-nav {
+    margin-left: auto;
+}
+
+footer {
+    background-color: #107c103a;
+    border-radius: 10px;
+}
