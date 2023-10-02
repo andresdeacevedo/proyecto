@@ -10,24 +10,25 @@
         content="Xbox, Microsoft, Consolas, Videojuegos, Xbox 360, Xbox One, Xbox One X, Xbox Series S/X">
     <meta name="author" content="Andres de Acevedo">
     <meta name="robots" content="index">
-    <link rel="icon" href=""> <!--ELEGIR ÍCONO LUEGO-->
+    <link rel="icon" href="img/index/ico.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body class="container">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/index/log.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="consolas.html">Consolas</a>
@@ -42,8 +43,9 @@
                         <a class="nav-link" href="sobremi.html">Sobre Mí</a>
                     </li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
         <h1>Comparte tu opinión</h1>
     </header>
 
@@ -113,7 +115,7 @@
                                 puede faltar en tu colección."</p>
                         </div>
                         <div class="col">
-                            <img src="img/opiniones/outer.jpg" alt="Outer Worlds" title="Outer Worlds">
+                            <img src="../img/opiniones/outer.jpg" alt="Outer Worlds" title="Outer Worlds">
                             <p>Outer Worlds<br>
                                 <a href="">Link de compra</a>
                             </p>
@@ -131,7 +133,7 @@
                                 de juego deportivo en la nueva generación."</p>
                         </div>
                         <div class="col">
-                            <img src="img/opiniones/fifa.jpg" alt="FIFA 23" title="FIFA 23">
+                            <img src="../img/opiniones/fifa.jpg" alt="FIFA 23" title="FIFA 23">
                             <p>FIFA 23<br>
                                 <a href="">Link de compra</a>
                             </p>
@@ -150,7 +152,7 @@
                                 ¡Una experiencia estratégica excepcional!"</p>
                         </div>
                         <div class="col">
-                            <img src="img/opiniones/ageofempire.jpg" alt="Age of Empires IV" title="Age of Empires IV">
+                            <img src="../img/opiniones/ageofempire.jpg" alt="Age of Empires IV" title="Age of Empires IV">
                             <p>Age of Empires IV<br>
                                 <a href="">Link de compra</a>
                             </p>
@@ -169,6 +171,10 @@
         <a href="https:/facebook.com">Facebook</a>
         <a href="https:/twitter.com">X (twitter)</a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
