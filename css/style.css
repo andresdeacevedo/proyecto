@@ -60,7 +60,31 @@ nav {
   margin-left: auto;
 }
 
+/*Pie de página*/
 footer {
   background-color: rgba(16, 124, 16, 0.2274509804);
   border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+#p_footer {
+  margin-bottom: 0;
+}
+
+/*Muestro la anidación en scss:*/
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
