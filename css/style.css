@@ -6,10 +6,25 @@
   box-sizing: border-box;
 }
 
-/*Variables*/
 img {
   max-width: 100%;
   height: auto;
+}
+
+/*Variables*/
+/*Clases generales*/
+.fila {
+  display: flex;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+}
+
+.centrado {
+  justify-content: center;
+  align-items: center;
 }
 
 /*Color de fondo*/
@@ -19,7 +34,12 @@ body {
 }
 
 /*Personalización de títulos*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #107C10;
   font-family: "Roboto", sans-serif;
 }
@@ -87,4 +107,87 @@ ul li a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+/*Página consolas.html con SCC nativo: Flex+ Grid+ Box-Modeling*/
+.consolas {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, auto);
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 40px;
+}
+
+@media (max-width: 1200px) {
+  .consolas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    row-gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .consolas {
+    display: grid;
+    grid-template-columns: 1 auto;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 30px;
+  }
+  .fila {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.elemento {
+  flex-grow: 0;
+  padding: 10px;
+}
+
+.elemento1 {
+  flex-basis: 60%;
+}
+
+.elemento2 {
+  flex-basis: 40%;
+}
+
+article {
+  border: solid 1px #107C10;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.aire {
+  padding: 20px;
+}
+
+/*css nativo para juegosdestacados.html*/
+.juegos {
+  display: flex;
+}
+
+.margen {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+  .juegos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .juegos {
+    display: flex;
+    flex-direction: column;
+  }
+  .juegos .fila {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20%;
+  }
 }/*# sourceMappingURL=style.css.map */

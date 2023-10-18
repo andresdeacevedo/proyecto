@@ -5,27 +5,49 @@
     box-sizing: border-box;
 }
 
-/*Variables*/
-$color-titulos: #107C10;
-$color-texto: #FFFFFF;
-$color-fondo: #1E1E1E;
-
 img {
     max-width: 100%;
     height: auto;
 }
 
 
+/*Variables*/
+$color-titulos: #107C10;
+$color-texto: #FFFFFF;
+$color-fondo: #1E1E1E;
+
+
+/*Clases generales*/
+.fila {
+    display: flex;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+
+.centrado {
+    justify-content: center;
+    align-items: center;
+}
+
+
 /*Color de fondo*/
 body {
-    background-color: $color-fondo; 
+    background-color: $color-fondo;
     color: $color-texto;
 }
 
 
 /*Personalización de títulos*/
-h1, h2, h3, h4, h5, h6 {
-    color: $color-titulos; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-titulos;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -43,18 +65,19 @@ nav {
     border-radius: 10px;
     margin-top: 10px;
 }
+
 .navbar {
     background-color: #107C10;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #FFFFFF ;
+    color: #FFFFFF;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-background-color: #FFFFFF;
-color: #107C10;
-border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #107C10;
+    border-radius: 10px;
 }
 
 .navbar-light .navbar-nav .nav-link .active {
@@ -72,7 +95,7 @@ footer {
     background-color: #107c103a;
     border-radius: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
 }
 
@@ -80,14 +103,17 @@ footer {
     margin-bottom: 0;
 }
 
+
 /*Muestro la anidación en scss:*/
 ul {
     list-style: none;
     padding: 0;
     text-align: center;
+
     li {
         display: inline-block;
         margin: 0 10px;
+
         a {
             text-decoration: none;
             color: #fff;
@@ -97,3 +123,85 @@ ul {
 }
 
 
+/*Página consolas.html con SCC nativo: Flex+ Grid+ Box-Modeling*/
+.consolas {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+@media (max-width: 1200px) {
+    .consolas {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .consolas {
+        display: grid;
+        grid-template-columns: 1 auto;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 30px;
+    }
+
+    .fila {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.elemento {
+    flex-grow: 0;
+    padding: 10px;
+}
+
+.elemento1 {
+    flex-basis: 60%;
+}
+
+.elemento2 {
+    flex-basis: 40%;
+}
+
+article {
+    border: solid 1px #107C10;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.aire {
+    padding: 20px;
+}
+
+/*css nativo para juegosdestacados.html*/
+.juegos {
+    display: flex;
+}
+.margen {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+    .juegos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .juegos {
+        display: flex;
+        flex-direction: column;
+    }
+    .juegos .fila {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 20%;
+    }
+}
