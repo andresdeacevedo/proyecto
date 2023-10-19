@@ -33,7 +33,7 @@ $color-fondo: #1E1E1E;
 }
 
 
-/*Color de fondo*/
+/*Color de fondo usando variables*/
 body {
     background-color: $color-fondo;
     color: $color-texto;
@@ -60,7 +60,6 @@ h1 {
 
 /*NAV*/
 /*Colores del nav*/
-
 nav {
     border-radius: 10px;
     margin-top: 10px;
@@ -169,20 +168,12 @@ ul {
     flex-basis: 40%;
 }
 
-article {
-    border: solid 1px #107C10;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.aire {
-    padding: 20px;
-}
 
 /*css nativo para juegosdestacados.html*/
 .juegos {
     display: flex;
 }
+
 .margen {
     margin-bottom: 40px;
 }
@@ -193,15 +184,45 @@ article {
         flex-direction: column;
     }
 }
+
 @media (max-width: 768px) {
     .juegos {
         display: flex;
         flex-direction: column;
     }
+
     .juegos .fila {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-basis: 20%;
+    }
+}
+
+
+/*Otras disposiciones generales*/
+article {
+    border: solid 1px #107C10;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.aire {
+    padding: 20px;
+}
+
+
+/*animación sólo para PC escritorio*/
+@media (min-width: 1200px) {
+    .animacion {
+        transition: all 0,5s;
+    }
+    .animacion:hover {
+        transform: scale(1.05);
+        background-color: #107c104c;
+        border-radius: 10px;
+    }
+    .animacion:hover h2 {
+        color: $color-texto;
     }
 }
